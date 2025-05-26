@@ -14,9 +14,19 @@
     />
 
     <!--Fav Icons-->
-    
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon-16x16.png"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -32,36 +42,65 @@
 
   <body class="d-flex flex-column min-vh-100 text-center">
     <header class="container mt-3">
-     <div class="row">
-      <div class="container header-container">
+      <div class="row">
+        <div class="container header-container">
+          <!-- Make the row wrap responsively -->
 
-       <!-- Make the row wrap responsively -->
+          <div class="row justify-content-center flex-wrap text-center">
+            <!-- ANAGRAM Word Group -->
 
-       <div class="row justify-content-center flex-wrap text-center">
-        
-        <!-- ANAGRAM Word Group -->
+            <div class="d-flex flex-wrap justify-content-center col-auto">
+              <div class="scrabble-tile">
+                <span class="tile-letter">A</span
+                ><span class="tile-score">1</span>
+              </div>
+              <div class="scrabble-tile">
+                <span class="tile-letter">N</span
+                ><span class="tile-score">1</span>
+              </div>
+              <div class="scrabble-tile">
+                <span class="tile-letter">A</span
+                ><span class="tile-score">1</span>
+              </div>
+              <div class="scrabble-tile">
+                <span class="tile-letter">G</span
+                ><span class="tile-score">2</span>
+              </div>
+              <div class="scrabble-tile">
+                <span class="tile-letter">R</span
+                ><span class="tile-score">1</span>
+              </div>
+              <div class="scrabble-tile">
+                <span class="tile-letter">A</span
+                ><span class="tile-score">1</span>
+              </div>
+              <div class="scrabble-tile">
+                <span class="tile-letter">M</span
+                ><span class="tile-score">3</span>
+              </div>
+            </div>
 
-        <div class="d-flex flex-wrap justify-content-center col-auto">
-          <div class="scrabble-tile"><span class="tile-letter">A</span><span class="tile-score">1</span></div>
-          <div class="scrabble-tile"><span class="tile-letter">N</span><span class="tile-score">1</span></div>
-          <div class="scrabble-tile"><span class="tile-letter">A</span><span class="tile-score">1</span></div>
-          <div class="scrabble-tile"><span class="tile-letter">G</span><span class="tile-score">2</span></div>
-          <div class="scrabble-tile"><span class="tile-letter">R</span><span class="tile-score">1</span></div>
-          <div class="scrabble-tile"><span class="tile-letter">A</span><span class="tile-score">1</span></div>
-          <div class="scrabble-tile"><span class="tile-letter">M</span><span class="tile-score">3</span></div>
-        </div>
+            <!-- JAM Word Group -->
 
-        <!-- JAM Word Group -->
-
-        <div class="d-flex flex-wrap justify-content-center col-auto mt-2 mt-md-0">
-          <div class="scrabble-tile"><span class="tile-letter">J</span><span class="tile-score">8</span></div>
-          <div class="scrabble-tile"><span class="tile-letter">A</span><span class="tile-score">1</span></div>
-          <div class="scrabble-tile"><span class="tile-letter">M</span><span class="tile-score">3</span></div>
-        </div>
-
+            <div
+              class="d-flex flex-wrap justify-content-center col-auto mt-2 mt-md-0"
+            >
+              <div class="scrabble-tile">
+                <span class="tile-letter">J</span
+                ><span class="tile-score">8</span>
+              </div>
+              <div class="scrabble-tile">
+                <span class="tile-letter">A</span
+                ><span class="tile-score">1</span>
+              </div>
+              <div class="scrabble-tile">
+                <span class="tile-letter">M</span
+                ><span class="tile-score">3</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-     </div>
     </header>
 
     <!--Main Game Content-->
@@ -70,7 +109,6 @@
       class="container flex-grow-1 d-flex flex-column justify-content-center mb-3 mt-3"
     >
       <div class="container game-tile rounded">
-
         <!--Controls-->
 
         <section class="container mt-3">
@@ -83,7 +121,9 @@
               </select>
             </div>
             <div class="col-12 col-xl-6">
-              <button class="btn-style rounded" onclick="startGame()">Start Game</button>
+              <button class="btn-style rounded" onclick="startGame()">
+                Start Game
+              </button>
             </div>
           </div>
         </section>
@@ -95,10 +135,17 @@
             <div id="round-counter" class="col-12"></div>
             <div id="tiles" class="col-12"></div>
             <div>
-              <input id="guess" class="rounded lighter-border" placeholder="Enter your guess..." type="text" />
+              <input
+                id="guess"
+                class="rounded lighter-border"
+                placeholder="Enter your guess..."
+                type="text"
+              />
             </div>
             <div>
-              <button class="btn-style rounded" onclick="checkGuess()">Submit</button>
+              <button class="btn-style rounded" onclick="checkGuess()">
+                Submit
+              </button>
             </div>
             <div id="feedback" class="col-12"></div>
             <div id="scoreboard" class="col-12">
