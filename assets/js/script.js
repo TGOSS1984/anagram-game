@@ -100,4 +100,24 @@
       });
     }
 
+    // Check User Guess
+
+    function checkGuess() {
+      const guess = document.getElementById("guess").value.trim().toLowerCase();
+      const feedback = document.getElementById("feedback");
+
+      if (guess === baseWord) {
+        feedback.textContent = `That's the base word! Try a different anagram.`;
+        return;
+      }
+
+      if (currentAnswers.includes(guess)) {
+        score++;
+        document.getElementById("score").textContent = `${score}`;
+        feedback.textContent = "✅ Correct!";
+      } else {
+        feedback.textContent = `❌ Incorrect! Possible answers: ${currentAnswers.join(", ")}`;
+      }
+
+
 
