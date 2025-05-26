@@ -119,5 +119,14 @@
         feedback.textContent = `❌ Incorrect! Possible answers: ${currentAnswers.join(", ")}`;
       }
 
+      // Add end game
+
+      setTimeout(() => {
+        feedback.textContent = "";
+        nextRound();
+      }, 1500);
+    }
+
+
 
 
