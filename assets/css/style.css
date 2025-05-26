@@ -164,4 +164,10 @@ container, .row {
       font-size: 0.3rem;
       
     }
+
+    .tile {
+      width: 40px;
+      height: 40px;
+      font-size: 1rem;
+    }
 }
