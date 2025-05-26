@@ -1,3 +1,5 @@
+ //Word Arrays
+ 
  const anagramSets = {
       easy: [
         ["stop", "post", "spot", "tops", "opts"],
@@ -36,6 +38,8 @@
         ["slotmachines", "cashlostinme"]
       ]
     };
+
+    //Shuffle Function
 
     function shuffleArray(array) {
       for (let i = array.length - 1; i > 0; i--) {
