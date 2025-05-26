@@ -7,22 +7,83 @@
     --secondary-font: "Libre Baskerville", sans-serif;
 }
 
-h1 {
-    font-family: var(--secondary-font);
+/*Global Styles*/
+
+body {
+    background-color: #ced8de;
 }
 
-main {
-    font-family: var(--primary-font);
-    background-image: url(../images/still-life-objects-with-role-playing-game-sheet.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+h1 {
+    font-family: var(--secondary-font);
 }
 
 div {
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
+/*Main Content*/
+
+main {
+    font-family: var(--primary-font);
+    background-image: url(../images/shutterstock_1090523621.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn-style {
+    background-color: #3f5b68;
+    color: #dcd7d2;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#scorecard {
+    font-weight: bold;
+}
+
+.game-tile {
+    background: linear-gradient(145deg, rgba(232, 221, 196, 0.8), rgba(215, 198, 161, 0.95));
+    width: 70%;
+}
+
+/*Header CSS*/
+
+  .scrabble-tile {
+      position: relative;
+      background: linear-gradient(145deg, #e8ddc4, #d7c6a1);
+      border: 2px solid #b49c65;
+      border-radius: 6px;
+      width: 60px;
+      height: 60px;
+      margin: 5px 5px;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), inset -1px -1px 0 rgba(255,255,255,0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Arial Black', sans-serif;
+      font-size: 2rem;
+      color: #222;
+    }
+
+    .tile-letter {
+      z-index: 1;
+    }
+
+    .tile-score {
+      position: absolute;
+      bottom: 4px;
+      right: 6px;
+      font-size: 0.6rem;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .header-container {
+      margin-top: 40px;
+      text-align: center;
+    }
 
 /*CSS Grid Visualisation*/
 /*
