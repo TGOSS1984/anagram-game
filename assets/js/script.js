@@ -67,3 +67,37 @@
       nextRound();
     }
 
+    // Show base word as scrabble style tiles and update round counter
+
+       function nextRound() {
+      if (round >= 10) {
+        displayTiles(["✓"]);
+        document.getElementById("feedback").textContent = `Game Over! You scored ${score} out of 10.`;
+        document.getElementById("round-counter").textContent = `Game complete`;
+        return;
+      }
+
+      const set = gameWords[round];
+      usedSets.push(set);
+      baseWord = set[Math.floor(Math.random() * set.length)];
+      currentAnswers = set.filter(word => word !== baseWord);
+      round++;
+
+      displayTiles(baseWord.toUpperCase().split(""));
+      document.getElementById("round-counter").textContent = `Round ${round} of 10`;
+      document.getElementById("guess").value = "";
+      document.getElementById("guess").focus();
+    }
+
+    function displayTiles(letters) {
+      const tileContainer = document.getElementById("tiles");
+      tileContainer.innerHTML = "";
+      letters.forEach(letter => {
+        const div = document.createElement("div");
+        div.className = "tile";
+        div.textContent = letter;
+        tileContainer.appendChild(div);
+      });
+    }
+
+
