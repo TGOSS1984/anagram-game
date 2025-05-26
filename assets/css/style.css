@@ -1,7 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*CSS Variables*/
+
+:root {
+    --primary-font: "Bitter", sans-serif;
+    --secondary-font: "Libre Baskerville", sans-serif;
+}
+
+h1 {
+    font-family: var(--secondary-font);
+}
+
+main {
+    font-family: var(--primary-font);
+    background-image: url(../images/still-life-objects-with-role-playing-game-sheet.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 
 /*CSS Grid Visualisation*/
-
+/*
 container, .row {
     border: 2px solid black;
 }
@@ -10,3 +34,4 @@ container, .row {
     border: 2px solid white;
     background-color: lightgrey;
 }
+*/
