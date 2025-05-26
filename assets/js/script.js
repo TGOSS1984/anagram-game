@@ -50,3 +50,20 @@
 
     let gameWords = [], usedSets = [], score = 0, round = 0;
     let baseWord = "", currentAnswers = [];
+
+    //Game Start Function
+
+    function startGame() {
+      const difficulty = document.getElementById("difficulty").value;
+      const allWords = [...anagramSets[difficulty]];
+      shuffleArray(allWords);
+      gameWords = allWords.slice(0, 10);
+      usedSets = [];
+      score = 0;
+      round = 0;
+      document.getElementById("score").textContent = `${score}`;
+      document.getElementById("feedback").textContent = "";
+      document.getElementById("game").style.display = "flex";
+      nextRound();
+    }
+
