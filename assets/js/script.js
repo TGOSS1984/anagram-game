@@ -123,13 +123,13 @@
         return;
       }
 
-      if (currentAnswers.includes(guess)) {
-        score++;
-        document.getElementById("score").textContent = `${score}`;
-        feedback.textContent = "✅ Correct!";
-      } else {
-        feedback.textContent = `❌ Incorrect! Possible answers: ${currentAnswers.join(", ")}`;
-      }
+    if (currentAnswers.includes(guess)) {
+       score++;
+       document.getElementById("score").textContent = `${score}`;
+       feedback.innerHTML = '<i class="fa-solid fa-circle-check" style="color:green;"></i> Correct!';
+     } else {
+      feedback.innerHTML = `<i class="fa-solid fa-circle-xmark" style="color:red;"></i> Incorrect! Possible answers: ${currentAnswers.join(", ")}`;
+    }
 
       // Add end game
 
