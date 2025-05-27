@@ -1,43 +1,55 @@
  //Word Arrays
  
  const anagramSets = {
-      easy: [
-        ["stop", "post", "spot", "tops", "opts"],
-        ["care", "race", "acre"],
-        ["stone", "tones", "onset", "notes"],
-        ["dusty", "study"],
-        ["night", "thing"],
-        ["bored", "robed"],
-        ["save", "vase"],
-        ["earth", "heart"],
-        ["evil", "vile", "live", "veil"],
-        ["listen", "silent", "enlist", "tinsel"]
-      ],
-      medium: [
-        ["rescue", "secure", "recuse"],
-        ["danger", "garden", "ranged"],
-        ["caters", "caster", "reacts", "traces"],
-        ["boaster", "boaters", "rebatos"],
-        ["canter", "nectar", "recant", "trance"],
-        ["lament", "mantle", "mental"],
-        ["observe", "verbose"],
-        ["admirer", "married"],
-        ["senator", "treason", "atoners"],
-        ["parley", "pearly", "replay"]
-      ],
-      hard: [
-        ["conversation", "voicesranton"],
-        ["debitcard", "badcredit"],
-        ["listen", "silent", "enlist", "tinsel"],
-        ["schoolmaster", "theclassroom"],
-        ["astronomer", "moonstarer"],
-        ["elevenplus", "lovesnepulu"],
-        ["a gentleman", "elegant man"],
-        ["funeral", "realfun"],
-        ["the eyes", "they see"],
-        ["slotmachines", "cashlostinme"]
-      ]
-    };
+  easy: [
+    ["stop", "post", "spot", "tops", "opts"],
+    ["care", "race", "acre"],
+    ["stone", "tones", "onset", "notes"],
+    ["dusty", "study"],
+    ["night", "thing"],
+    ["bored", "robed"],
+    ["save", "vase"],
+    ["earth", "heart"],
+    ["evil", "vile", "live", "veil"],
+    ["listen", "silent", "enlist", "tinsel"]
+  ],
+  medium: [
+    ["rescue", "secure", "recuse"],
+    ["danger", "garden", "ranged"],
+    ["caters", "caster", "reacts", "traces"],
+    ["boaster", "boaters", "rebatos"],
+    ["canter", "nectar", "recant", "trance"],
+    ["lament", "mantle", "mental"],
+    ["observe", "verbose"],
+    ["admirer", "married"],
+    ["senator", "treason", "atoners"],
+    ["parley", "pearly", "replay"]
+  ],
+  hard: [
+    ["debitcard", "badcredit"],
+    ["schoolmaster", "theclassroom"],
+    ["astronomer", "moonstarer"],
+    ["funeral", "realfun"],
+    ["theeyes", "theysee"],
+    ["slotmachines", "cashlostinme"],
+    ["presbyterian", "bestinprayer"],
+    ["integrals", "alertings", "alterings"],
+    ["elastin", "latines", "staline"],
+    ["relations", "solitari", "isolarent"]  // Note: these last two are uncommon but valid forms.
+  ],
+  veryhard: [
+    ["conversation", "conservation"],
+    ["painter", "repaint", "pertain"],
+    ["earthlings", "heartlings"],
+    ["integrals", "alertings", "alterings"],
+    ["resistance", "ancestries", "ancestrise"], // "ancestrise" less common but accepted in some dictionaries
+    ["sidecar", "cradies"],
+    ["admirer", "married"],
+    ["repent", "penter"],
+    ["parsing", "rasping"],
+    ["smiling", "milsing"]
+  ]
+};
 
     //Shuffle Function
 
