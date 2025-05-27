@@ -34,7 +34,7 @@ div {
 
 .scrabble-tile {
       position: relative;
-      background: linear-gradient(145deg, rgba(245, 239, 228, 0.5), rgba(215, 198, 161, 0.5)), url(/assets/images/blank-tile.png);
+      background: linear-gradient(145deg, rgba(245, 239, 228, 0.9), rgba(231, 216, 184, 0.2)), url(/assets/images/blank-tile.png);
       background-position: center;
       border: 3px solid #b49c65;
       border-radius: 6px;
@@ -151,18 +151,6 @@ main {
 #feedback {
         font-weight: bold;
     }
-
-/*CSS Grid Visualisation*/
-/*
-container, .row {
-    border: 2px solid black;
-}
-
-.col-12 {
-    border: 2px solid white;
-    background-color: lightgrey;
-}
-*/
 
 /*Media Query for title on small screens*/
 

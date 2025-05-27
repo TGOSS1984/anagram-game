@@ -33,7 +33,7 @@
 
 ### User Experience
 
-
+Anagram Jam delivers a clean, engaging, and responsive experience designed for players of all ages and skill levels. The intuitive interface presents players with letter tiles in a Scrabble-inspired layout, encouraging them to form real English words through clever thinking and pattern recognition. With difficulty levels ranging from easy to very hard, the game provides a steady learning curve and replayability. Visual feedback such as score tracking, animated tile displays, and clear result indicators enhance user interaction, while accessible design elements like keyboard focus support and mobile responsiveness ensure a seamless experience across all devices.
 
 ## Features
 

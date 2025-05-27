@@ -100,7 +100,7 @@
       document.getElementById("guess").value = "";
       document.getElementById("guess").focus();
     }
-
+    
     function displayTiles(letters) {
       const tileContainer = document.getElementById("tiles");
       tileContainer.innerHTML = "";
@@ -111,7 +111,7 @@
         tileContainer.appendChild(div);
       });
     }
-
+    
     // Check User Guess
 
     function checkGuess() {
