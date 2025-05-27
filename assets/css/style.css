@@ -68,6 +68,11 @@ div {
       text-align: center;
     }
 
+.tagline {
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+}    
+
 /*Main Content*/
 
 main {
