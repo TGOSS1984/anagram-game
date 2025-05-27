@@ -100,18 +100,28 @@
       document.getElementById("guess").value = "";
       document.getElementById("guess").focus();
     }
-    
+
     function displayTiles(letters) {
-      const tileContainer = document.getElementById("tiles");
-      tileContainer.innerHTML = "";
-      letters.forEach(letter => {
-        const div = document.createElement("div");
-        div.className = "tile";
-        div.textContent = letter;
-        tileContainer.appendChild(div);
-      });
-    }
-    
+  const tileContainer = document.getElementById("tiles");
+  tileContainer.innerHTML = "";
+
+  letters.forEach((letter, i) => {
+    const tile = document.createElement("div");
+    tile.className = "tile";
+
+    // put the letter in a span so we can style backface
+    const span = document.createElement("span");
+    span.className = "tile-letter";
+    span.textContent = letter;
+    tile.appendChild(span);
+
+    tileContainer.appendChild(tile);
+
+    // staggered flip
+    setTimeout(() => tile.classList.add("flip"), 150 * i);
+  });
+  }
+
     // Check User Guess
 
     function checkGuess() {
