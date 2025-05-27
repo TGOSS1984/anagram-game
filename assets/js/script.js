@@ -35,14 +35,14 @@
     ["presbyterian", "bestinprayer"],
     ["integrals", "alertings", "alterings"],
     ["elastin", "latines", "staline"],
-    ["relations", "solitari", "isolarent"]  // Note: these last two are uncommon but valid forms.
+    ["relations", "solitari", "isolarent"]
   ],
   veryhard: [
     ["conversation", "conservation"],
     ["painter", "repaint", "pertain"],
     ["earthlings", "heartlings"],
     ["integrals", "alertings", "alterings"],
-    ["resistance", "ancestries", "ancestrise"], // "ancestrise" less common but accepted in some dictionaries
+    ["resistance", "ancestries", "ancestrise"], 
     ["sidecar", "cradies"],
     ["admirer", "married"],
     ["repent", "penter"],
