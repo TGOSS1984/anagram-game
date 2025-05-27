@@ -109,12 +109,13 @@
       class="container flex-grow-1 d-flex flex-column justify-content-center mb-3 mt-3"
     >
       <div class="container game-tile rounded">
-        
+
         <!--Controls-->
 
-        <section class="container mt-3">
+        <section class="container mt-3 aria-labelledby="controls-heading">
           <div id="controls" class="row">
             <div class="col-12 col-xl-6">
+              <label for="difficulty" class="form-label">Select Difficulty</label>
               <select id="difficulty" class="rounded lighter-border">
                 <option value="easy">Easy</option>
                 <option value="medium">Medium</option>
@@ -131,11 +132,12 @@
 
         <!--Game-->
 
-        <section class="container mt-3">
+        <section class="container mt-3 aria-labelledby="game-section-heading"">
           <div id="game" class="row">
             <div id="round-counter" class="col-12"></div>
             <div id="tiles" class="col-12"></div>
             <div>
+              <label for="guess" class="form-label visually-hidden">Your Guess</label>
               <input id="guess" class="rounded lighter-border" placeholder="Enter your guess..." type="text"/>
             </div>
             <div>
@@ -143,7 +145,7 @@
                 Submit
               </button>
             </div>
-            <div id="feedback" class="col-12"></div>
+            <div id="feedback" class="col-12" aria-live="polite"></div>
             <div id="scoreboard" class="col-12">
               Score: <span id="score">0</span>/10
             </div>

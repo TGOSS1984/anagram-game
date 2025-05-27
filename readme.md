@@ -102,7 +102,11 @@ Code was validated using CSS Validation
 
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
 
+## JS Validation
 
+Code was validated using JS Hint
+
+- [JS Hint](https://jshint.com/)
 
 ### Lighthouse Tests
 
