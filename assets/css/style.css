@@ -113,7 +113,7 @@ main {
 }
 
 .game-tile {
-    background: linear-gradient(200deg, rgba(232, 221, 196, 0.8), rgba(215, 198, 161, 0.3)), url(../images/wood-bg-image.jpg);
+    background: linear-gradient(200deg, rgba(232, 221, 196, 0.8), rgba(215, 198, 161, 0.3)), url('../images/wood-bg-image.jpg');
     width: 70%;
     background-position: center;
     background-size: cover;
