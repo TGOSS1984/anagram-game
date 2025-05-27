@@ -1,6 +1,6 @@
 # Anagram Jam
 
-
+**Anagram Jam** s a fast-paced, vocabulary-boosting word game that challenges players to unscramble letters and find all possible valid anagrams. It's easy to pick up but hard to put down — perfect for word lovers, puzzle enthusiasts, and anyone looking to sharpen their brain in a fun and engaging way.
 
 **LINK TO GIT HUB PROJECT BELOW**
 
@@ -18,6 +18,7 @@
     - [Browser and Device Testing](#browser-and-device-testing)
     - [HTML Validation](#html-validation)
     - [CSS Validation](#css-validation)
+    - [JS Validation](#js-validation)
     - [Lighthouse Tests](#lighthouse-tests)
     - [Solved Bugs](#solved-bugs)
     - [Unfixed Bugs](#unfixed-bugs)    
@@ -38,10 +39,27 @@
 
 ### Main Features
 
+- Multiple Difficulty Levels: Easy, Medium, Hard, Very Hard
+- Random Anagram sets: Eacg game is different
+- Score Tracking: Tracks score out 10
+- Scrabble-style tiles: Both on the header & the game itself for fun reference to scrabble & some visual engagement
+- Responsive Design: Suitable to play on destop, tablet & mobile
 
+#### How to Play?
+
+- Choose a difficulty Level
+- After starting game an anagram base word appears using letter tiles
+- Type in a valid anagram of that word (not using the base word)
+- Get feedback instantly - green circle with tick if correct , red circle with cross if incorrect
+- Complete all 10 rounds and see your final score
 
 ### Features for future Development
  
+ - Timed mode with countdown
+ - Leaderboard integration (maybe add database)
+ - Accessibility enhancements
+ - Sound Effects & Animations
+
 
 ### Design
 
@@ -133,7 +151,7 @@ No unfixed bugs
 **Languages Used**
 
     - HTML
-    - CSS
+    - CSS (with Bootstrap)
     - Javascript 
 
 ### Technology

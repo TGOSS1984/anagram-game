@@ -34,7 +34,8 @@ div {
 
 .scrabble-tile {
       position: relative;
-      background: linear-gradient(145deg, #f5efe4, #d7c6a1);
+      background: linear-gradient(145deg, rgba(245, 239, 228, 0.5), rgba(215, 198, 161, 0.5)), url(/assets/images/blank-tile.png);
+      background-position: center;
       border: 3px solid #b49c65;
       border-radius: 6px;
       width: 60px;
@@ -77,10 +78,14 @@ div {
 
 main {
     font-family: var(--primary-font);
-    background-image: url(../images/background-image.jpg);
+    background-image: url(/assets/images/background-image.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.form-label {
+    font-weight: bold;
 }
 
 .btn-style {
@@ -108,8 +113,11 @@ main {
 }
 
 .game-tile {
-    background: linear-gradient(145deg, rgba(232, 221, 196, 0.8), rgba(215, 198, 161, 0.95));
+    background: linear-gradient(200deg, rgba(232, 221, 196, 0.8), rgba(215, 198, 161, 0.3)), url(/assets/images/wood-bg-image.jpg);
     width: 70%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #tiles {
