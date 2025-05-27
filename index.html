@@ -1,43 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Play Anagram Jam – a fun and challenging word puzzle game! Unscramble letters, boost your vocabulary, and race against time. Great for all ages."/>
-    <meta name="keywords" content="anagram, word game, puzzle, unscramble, vocabulary, brain game, anagram solver, word scramble, online word game"/>
+    <meta name="description" content="Play Anagram Jam – a fun and challenging word puzzle game! Unscramble letters, boost your vocabulary, and race against time. Great for all ages.">
+    <meta name="keywords" content="anagram, word game, puzzle, unscramble, vocabulary, brain game, anagram solver, word scramble, online word game">
 
     <!--Fav Icons-->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/images/favicon-16x16.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
 
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome Link -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!--CSS Link-->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Anagram Jam – Fun Word Puzzle Game</title>
+
   </head>
 
   <body class="d-flex flex-column min-vh-100 text-center">
@@ -116,14 +102,13 @@
 
     <!--Main Game Content-->
 
-    <main
-      class="container flex-grow-1 d-flex flex-column justify-content-center mb-3 mt-3"
-    >
+    <main class="container flex-grow-1 d-flex flex-column justify-content-center mb-3 mt-3">
+
       <div class="container game-tile rounded">
 
         <!--Controls-->
 
-        <section class="container mt-3" aria-labelledby=controls-heading">
+        <section class="container mt-3" aria-label="Game Controls">
           <div id="controls" class="row">
             <div class="col-12 col-xl-6">
               <label for="difficulty" class="form-label">Select Difficulty:</label>
@@ -144,13 +129,13 @@
 
         <!--Game-->
 
-        <section class="container mt-3" aria-labelledby="game-section-heading">
+        <section class="container mt-3" aria-label="Game Play Area">
           <div id="game" class="row">
             <div id="round-counter" class="col-12"></div>
             <div id="tiles" class="col-12"></div>
             <div>
               <label for="guess" class="form-label visually-hidden">Your Guess</label>
-              <input id="guess" class="rounded lighter-border" placeholder="Enter your guess..." type="text"/>
+              <input id="guess" class="rounded lighter-border" placeholder="Enter your guess..." type="text">
             </div>
             <div>
               <button class="btn-style rounded" onclick="checkGuess()">
@@ -169,5 +154,6 @@
     <!--JS Link-->
 
     <script src="assets/js/script.js"></script>
+
   </body>
 </html>
