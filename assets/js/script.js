@@ -109,7 +109,8 @@
     const tile = document.createElement("div");
     tile.className = "tile";
 
-    // put the letter in a span so we can style backface
+    // Letter in span for styling (flip animation)
+    
     const span = document.createElement("span");
     span.className = "tile-letter";
     span.textContent = letter;
@@ -117,7 +118,8 @@
 
     tileContainer.appendChild(tile);
 
-    // staggered flip
+    // Staggered flip (flip animation)
+
     setTimeout(() => tile.classList.add("flip"), 150 * i);
   });
   }
