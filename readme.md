@@ -22,6 +22,7 @@
     - [CSS Validation](#css-validation)
     - [JS Validation](#js-validation)
     - [Lighthouse Tests](#lighthouse-tests)
+    - [General Site Testing](#general-site-testing)
     - [Solved Bugs](#solved-bugs)
     - [Unfixed Bugs](#unfixed-bugs)    
 - [**Technologies Used**](#technologies-used)
@@ -89,6 +90,8 @@ Anagram Jam delivers a clean, engaging, and responsive experience designed for p
 ### Design
 
 The orignal concept was created using wireframes with the objective being to create a one-page / word game website. Anagram Jam features a clean, inviting interface inspired by classic Scrabble tiles and rich wood‑grain textures, combining modern CSS techniques and thoughtful UX. The colour theme is neutral, parchment‑like color palette (warm creams and muted greens) paired with bold accent hues to highlight interactive elements and scores. Tiles are rendered as flex‑aligned cards with subtle 3D flip animations that reveal each scrambled letter in sequence. The layout is fully responsive—built mobile‑first with CSS Grid and Flexbox—so that controls, feedback messages, and the game board always remain centered and legible on any screen size. Under the hood, CSS custom properties and Google Fonts ensure consistent theming, while semantic HTML5 landmarks and ARIA attributes support keyboard navigation and screen readers. Altogether, the design balances playful visual flair with accessible, user‑focused functionality.
+
+**Wireframe Mockup**
 
 ![Wireframe](assets/images/wireframe-example.PNG)
 
@@ -192,7 +195,7 @@ Lighthouse test results -
 
 All key scores were passed in lighthouse test
 
-**General Site Testing**
+### General Site Testing
 
 - I checked that the site was fully responsive on multiple screen types using not only browserstack but also devtools device toolbar once deployed to github pages
 - I confirmed that the all buttons worked correctly (start game would show the game area), submit would show if the answer was correct/incorrect once deployed to github pages
