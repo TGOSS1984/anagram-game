@@ -21,10 +21,6 @@ body {
     letter-spacing: 3px;
 }
 
-h1 {
-    font-family: var(--secondary-font);
-}
-
 div {
     margin-bottom: 10px;
     margin-top: 10px;
@@ -190,7 +186,7 @@ main {
     visibility: hidden;
 }
 
-/*Media Query for title on small screens*/
+/*Media Query for title & tiles on small screens*/
 
 @media (max-width: 768px) {
     .scrabble-tile {
