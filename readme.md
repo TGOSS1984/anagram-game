@@ -208,7 +208,7 @@ All key scores were passed in lighthouse test
 - Checked and tested that the 'submit' button & Enter key sent the guess correctly
 - Checked & tested that the score counter counted correctly
 - Checked and tested that the game ended correctly with a final score
-- I would usually test & commit the code in 'chunks' so that if any bugs were present they would more easily manageable
+- I would usually test & commit the code in 'chunks' so that if any bugs were present they would be more easily manageable to fix
 - Testing of the site took place in DevTools, JSHint, HTML Validator, CSS Validator & also by openeing the page in a live environment to check how the key features were working
 
 ### Solved Bugs
@@ -229,7 +229,7 @@ All key scores were passed in lighthouse test
     - When first testing with Lighthouse I got a lower than expected accessibility score, this was because aria labels had been missed or added incorrectly to certain elements, once fixed the score was much improved
     - When first testing the game I inherently pressed enter to submit an answer, when this did not work I decided that I should implement an event listener for a key press. At first though I did not add the call to checkGuess() which meant that this did not work. Once added this corrected the issue
     - As the game area starts as hidden using display:none, I decided to add a focus() into the JS to ensure better user experience - this was discovered after I first tested the code
-    
+
 - Resource Paths & Deployment errors:
     - When I first deployed the site in gitpages I realised that all images used where not visible, I had to change the image file paths to fix this
 
