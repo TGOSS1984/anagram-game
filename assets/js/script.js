@@ -154,7 +154,7 @@
     document.getElementById('guess')
     .addEventListener('keydown', function(e) {
     if (e.key === 'Enter') {
-      e.preventDefault();  // prevent form submits or unwanted behaviors
+      e.preventDefault();
       checkGuess();
     }
   });
