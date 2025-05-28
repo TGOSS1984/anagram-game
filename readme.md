@@ -161,7 +161,7 @@ Lighthouse Homepage test results -
 ### Solved Bugs
 
 - General Bugs
-    - There were many occasions when the javascript just did not work as expected and I used JSHint to help with this. The most common errors I found where syntax errors where I had missed the following ; / {} / [] 
+    - There were many occasions when the javascript just did not work as expected and I used JSHint to help with this. The most common errors I found were syntax errors where I had missed the following ; / {} / [] 
 
 - Game Logic Bugs:
     - When I was testing the code , intially I didnt include 'usedSets' so this meant that some words would appear twice, this was fixed by adding
@@ -199,8 +199,8 @@ No unfixed bugs
 
 - The icons for the tick & cross where taken from [Font Awesome](https://fontawesome.com/)
 - The main font used were taken from [Google Fonts](https://fonts.google.com/)
-- [Bootsrap](https://getbootstrap.com/) was used in the CSS
-- I used [Reddit](https://www.reddit.com/r/JavaScriptHelp/) & [Google Search](https://www.google.com/) to help with some of the javascript code
+- [Bootstrap](https://getbootstrap.com/) was used in the CSS
+- I used [Reddit-JavascriptHelp](https://www.reddit.com/r/JavaScriptHelp/) & [Google Search](https://www.google.com/) to help with some of the javascript code
 - Google Images was used
 - [Youtube](https://www.youtube.com/) for reference but code was not taken directly from here
 
@@ -208,7 +208,7 @@ No unfixed bugs
 
 ### Content Links
 
-- [Link to Bootsrap](https://getbootstrap.com/)
+- [Link to Bootstrap](https://getbootstrap.com/)
 - [Link to Google Fonts](https://fonts.google.com/)
 
 ### Media Links
