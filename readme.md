@@ -65,7 +65,7 @@ Anagram Jam delivers a clean, engaging, and responsive experience designed for p
     ![Website game area](assets/images/game-area-image.PNG)
 
 - **Feedback Area**
-    - Lets the user know whether or not they answered correctly and returns a tick or cross depending on the outcome along with some possible answers if answer provided is incorrect (if incorrect this will also show the user possible answers)
+    - Lets the user know whether or not they answered correctly and returns a tick or cross depending on the outcome along with some possible answers. If answer provided is incorrect (if incorrect this will also show the user possible answers)
 
     ![Website game area](assets/images/feedback.PNG)
     
@@ -208,6 +208,8 @@ All key scores were passed in lighthouse test
 - Checked and tested that the 'submit' button & Enter key sent the guess correctly
 - Checked & tested that the score counter counted correctly
 - Checked and tested that the game ended correctly with a final score
+- I would usually test & commit the code in 'chunks' so that if any bugs were present they would more easily manageable
+- Testing of the site took place in DevTools, JSHint, HTML Validator, CSS Validator & also by openeing the page in a live environment to check how the key features were working
 
 ### Solved Bugs
 
@@ -218,13 +220,16 @@ All key scores were passed in lighthouse test
 - Game Logic Bugs:
     - When I was testing the code , intially I didnt include 'usedSets' so this meant that some words would appear twice, this was fixed by adding it to the code
     - Currently when the user types the same base word this gives the message 'That's the base word! Try a different anagram'. This could be seen as confusing or exploitable.
+
 - UI & Flip Animation glitch:
     - Initially I tried to add an extra wrapper element for the tile flip animation, this caused the layout to break, which meant tiles did not wrap properly, this was fixed by ensuring the extra CSS existed in the .tile element
     - Because I was using bootstrap and classes like .row & .d-flex there were sometimes overlaps when used in the wrong places which caused issues with the UX
+
 - Accessibility & Keyboard Bugs:
     - When first testing with Lighthouse I got a lower than expected accessibility score, this was because aria labels had been missed or added incorrectly to certain elements, once fixed the score was much improved
     - When first testing the game I inherently pressed enter to submit an answer, when this did not work I decided that I should implement an event listener for a key press. At first though I did not add the call to checkGuess() which meant that this did not work. Once added this corrected the issue
     - As the game area starts as hidden using display:none, I decided to add a focus() into the JS to ensure better user experience - this was discovered after I first tested the code
+    
 - Resource Paths & Deployment errors:
     - When I first deployed the site in gitpages I realised that all images used where not visible, I had to change the image file paths to fix this
 
